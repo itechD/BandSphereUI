@@ -1,0 +1,27 @@
+{
+  "app": {
+    "name": "bandsphere"
+  },
+    "side": {
+  	"profile":"PROFILE",
+    "home": "Home",
+    "music":  "Music",
+    "videos": "Videos",
+    "photos": "Photos",
+    "messages": "Messages",
+    "notifications":"Notifications",
+    "rehearsalTimes":"Rehearsal Times",
+    "myEquipment":"My Equipment",
+    "myHistory":"My History"
+  },
+    "top": {
+    "home": "Home",
+    "page1": "Page One",
+    "page2": "Page Two",
+    "settings":"Settings"
+  },
+    "notification": {
+    "hello": "Hello",
+    "learnMore": "Learn more"
+  }
+}
