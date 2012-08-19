@@ -16,8 +16,8 @@
   },
     "top": {
     "home": "Home",
-    "page1": "Page One",
-    "page2": "Page Two",
+   	"find": "Find",
+   	"create":"Create",
     "settings":"Settings"
   },
     "notification": {
