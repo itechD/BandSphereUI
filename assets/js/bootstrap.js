@@ -1,4 +1,5 @@
 var apiHost = 'http://localhost:8000';
+var soundCloudId = 'SOME_SOUNDCLOUD_ID';
 
 var UserViewModel = function() {
 	var self = this;
@@ -41,6 +42,8 @@ function EndPoint(url) {
 
 $(document).ready(function() {
 	$.i18n.init({resGetPath: 'i18n/__lng__.json',lng:'en-US', debug: true}, function(t){$("body").i18n();});
+
+
 	var data = new EndPoint(apiHost.concat('/api/v1/me'));
 	viewModel = new UserViewModel();
 	ko.applyBindings(viewModel);
