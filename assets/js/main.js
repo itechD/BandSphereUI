@@ -14,7 +14,7 @@ var UserViewModel = function() {
 	}, this);
 	
 	self.build = function(data) {
-		self.userName(data.user.username);
+		self.userName('Awesome User');
 		self.firstName(data.user.first_name);
 		self.lastName(data.user.last_name);
 		if(data.notification!=null){
@@ -42,11 +42,19 @@ function EndPoint(url) {
 
 $(document).ready(function() {
 	$.i18n.init({resGetPath: 'i18n/__lng__.json',lng:'en-US', debug: true}, function(t){$("body").i18n();});
+//	var data = new EndPoint(apiHost.concat('/api/v1/me'));
+//	viewModel = new UserViewModel();
+//	ko.applyBindings(viewModel);
+//	data = data.get(viewModel.build);
+    $container.imagesLoaded( function(){ $('#container').isotope({
+        // options
+        itemSelector : '.pin',
+        masonry: {
+            columnWidth: 50
+        }
+    });
 
-
-	var data = new EndPoint(apiHost.concat('/api/v1/me'));
-	viewModel = new UserViewModel();
-	ko.applyBindings(viewModel);
-	data = data.get(viewModel.build);
+        $('#container').isotope('reLayout');
+        });
 });
 
